@@ -1,10 +1,9 @@
-class Artist
-  attr_accessor :song
- 
-  def song=(song)
-    @song = song
-    
+require "spec_helper"
+
+describe "Artist" do 
+  it "has a name" do
+    artist = Artist.new
+    artist.name = "Beyonce" 
+    expect(artist.name).to eq("Beyonce")
   end
- 
 end
- 
